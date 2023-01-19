@@ -1,0 +1,51 @@
+/*
+ The basic logic note in this problem is to use nested loop go through
+ each digit in array & check weather sum of two digits are equal given no or not.  
+
+*/
+<script>
+    x = [2,3,5,6,7]
+    k= 8
+for(a=0;a<6;a++){
+    let firstNo = x[a]
+    for(b=0;b<x.length;b++){
+        let secNo = x[b]
+       
+            
+            let sumOfNos = secNo+firstNo;
+            if(sumOfNos == k ){
+                alert(`Sum of ${firstNo} + ${secNo} = ${k}`)
+            }
+        
+    }
+}
+
+
+
+
+// x = [2,3,5,6,12,7]
+//     k= 8
+// for(a=0;a<6;a++){
+//     let firstNo = x[a]
+//     for(b=0;b<x.length;b++){
+//         let secNo = x[b]
+//         for(c=0;c<x.length;c++){
+//             let thirdNo = x[c];
+//             let sumOfNos = thirdNo+secNo+firstNo;
+//             if(sumOfNos == k ){
+//                 alert(`Sum of ${firstNo} + ${secNo} + ${thirdNo} = ${k}`)
+//             }
+//         }
+//     }
+// }
+
+
+</script>
+
+echo "# DailyJavascript" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Daniyal1303/DailyJavascript.git
+git push -u origin main
